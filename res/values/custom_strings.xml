@@ -23,6 +23,7 @@
     <string name="category_home">HOME</string>
     <string name="category_icon">ICON</string>
     <string name="category_misc">MISC</string>
+    <string name="category_drawer">DRAWER</string>
 
     <!-- Settings title to show Google Now at -1 screen on launcher. [CHAR LIMIT=50] -->
     <string name="title_show_google_app">Swipe to access Google app</string>
@@ -85,4 +86,12 @@
     <string name="app_info_last_update">Last update</string>
     <string name="app_info_version">Version</string>
     <string name="app_info_more">More</string>
+
+    <!-- Grid -->
+    <string name="num_default">Default</string>
+    <string name="number_of_columns_title">Grid and app drawer columns</string>
+    <string name="number_of_rows_title">Grid and app drawer rows</string>
+    <string name="number_of_hotseat_title">Homescreen quicklaunch icons</string>
+    <string name="state_loading">Applying\u2026</string>
+
 </resources>

@@ -225,6 +225,11 @@ public class SettingsActivity extends FragmentActivity
                 case IconPackStore.KEY_ICON_PACK:
                     updatePreferences();
                     break;
+                case Utilities.GRID_COLUMNS:
+                case Utilities.GRID_ROWS:
+                case Utilities.HOTSEAT_ICONS:
+                    LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    break;
             }
         }
 
@@ -320,6 +325,18 @@ public class SettingsActivity extends FragmentActivity
                             return true;
                         }
                     });
+                    return true;
+
+                case Utilities.GRID_COLUMNS:
+                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+
+                case Utilities.GRID_ROWS:
+                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
+                    return true;
+
+                case Utilities.HOTSEAT_ICONS:
+                     LauncherAppState.getInstanceNoCreate().setNeedsRestart();
                     return true;
             }
 
