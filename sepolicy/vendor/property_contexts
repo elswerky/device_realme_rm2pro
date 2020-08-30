@@ -36,4 +36,8 @@ vendor.thermal.config                            u:object_r:vendor_thermal_prop:
 
 # Allow theme_prop to be read and set by Settings
 persist.sys.theme.accentcolor                 u:object_r:theme_prop:s0
-persist.sys.theme.gradientcolor               u:object_r:theme_prop:s0
+persist.sys.theme.gradientcolor               u:object_r:theme_prop:s0 
+
+# Dirac
+persist.audio.dirac                           u:object_r:dirac_prop:s0
+
