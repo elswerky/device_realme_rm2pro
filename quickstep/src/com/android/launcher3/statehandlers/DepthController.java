@@ -243,8 +243,7 @@ public class DepthController implements StateHandler<LauncherState>,
 
         if (supportsBlur) {
             final int blur;
-            if (mLauncher.isInState(LauncherState.NORMAL) && mLauncher.getStateManager()
-                    .getCurrentStableState() == LauncherState.NORMAL) {
+            if (mLauncher.isInState(LauncherState.NORMAL)) {
                 // Normal state has a solid wallpaper. We don't need to draw blurs after it's fully
                 // visible. This will take us out of GPU composition, saving battery and increasing
                 // performance.
