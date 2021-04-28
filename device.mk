@@ -154,7 +154,7 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libbthost_if
 
-# Bluetooth 
+# Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
@@ -425,9 +425,9 @@ PRODUCT_PACKAGES += \
     android.hardware.vibrator@1.0-impl \
     android.hardware.vibrator@1.0-service
 
-# VNDK-SP
+# VNDK
 PRODUCT_PACKAGES += \
-    vndk-sp
+    vndk_package
 
 # WiFi
 PRODUCT_PACKAGES += \
