@@ -427,8 +427,7 @@ PRODUCT_PACKAGES += \
 
 # VNDK-SP
 PRODUCT_PACKAGES += \
-    vndk-sp \
-    com.android.vndk.current.on_vendor
+    vndk-sp
 
 # WiFi
 PRODUCT_PACKAGES += \
