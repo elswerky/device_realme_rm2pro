@@ -40,9 +40,9 @@
     <!-- Folder titles -->
     <string name="google_folder_title" translatable="false">Google</string>
 
-    <!-- Suggestions -->
+    <!-- Suggestions 
     <string name="suggestion_pref_screen_title">Suggestions</string>
-    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>
+    <string name="suggestion_pref_screen_desc">For All Apps &amp; Home screen suggestions</string>-->
 
     <!-- Trust apps -->
     <string name="trust_apps_manager_name">Hidden &amp; Protected apps</string>
