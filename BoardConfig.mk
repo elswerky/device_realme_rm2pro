@@ -60,6 +60,7 @@ TARGET_KERNEL_CONFIG := RMX1801_defconfig
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
+TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
 TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
 
 # Audio
