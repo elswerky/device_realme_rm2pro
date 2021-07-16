@@ -1,12 +1,20 @@
 [
-  {
-    "repository" : "baibhab34/RMX1801",
-    "target_path": "kernel/realme/sdm660",
-    "remote"     : "github",
-    "branch"     : "eas3"
-  },
-  {
-    "repository" : "vendor_realme",
-    "target_path": "vendor/realme"
-  }
+    {
+      "repository" : "baibhab34/RMX1801",
+      "target_path": "kernel/realme/sdm660",
+      "remote"     : "github",
+      "branch"     : "eas3"
+    },
+    {
+      "repository" : "ad1tyas1ngh/vendor_realme_r2p",
+      "target_path": "vendor/realme/r2p",
+      "remote"     : "github",
+      "branch"     : "R"
+    },
+    {
+      "repository" : "techyminati/android_packages_apps_RealmeDirac",
+      "target_path": "packages/apps/RealmeDirac",
+      "remote"     : "github",
+      "branch"     : "master"
+    }
 ]
