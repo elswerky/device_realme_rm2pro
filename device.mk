@@ -32,8 +32,7 @@ PRODUCT_PACKAGES += \
     NoCutoutOverlay
 
 PRODUCT_ENFORCE_RRO_TARGETS := *
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
-    $(LOCAL_PATH)/overlay-aosp
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += device/realme/r2p
