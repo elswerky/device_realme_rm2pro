@@ -196,9 +196,6 @@ PRODUCT_PACKAGES += \
     vendor.display.config@1.9 \
     vendor.display.config@1.9_vendor
 
-# Dirac
-$(call inherit-product, packages/apps/RealmeDirac/dirac.mk)
-
 # DRM
 PRODUCT_PACKAGES += \
     android.hardware.drm@1.0-impl \
