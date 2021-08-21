@@ -478,7 +478,8 @@ PRODUCT_BOOT_JARS += \
 
 # Prebuilt Packages
 PRODUCT_PACKAGES += \
-    GCamGo
+    GCamGo \
+    BHMusicPlayer
 
 # Recorder
 PRODUCT_PACKAGES += \
