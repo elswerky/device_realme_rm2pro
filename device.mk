@@ -480,7 +480,3 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     GCamGo \
     BHMusicPlayer
-
-# Recorder
-PRODUCT_PACKAGES += \
-    OPScreenRecorder
