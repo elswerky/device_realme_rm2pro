@@ -42,8 +42,8 @@
 
     <!-- Hotseat/all-apps scrim -->
     <dimen name="all_apps_scrim_blur">4dp</dimen>
-    <dimen name="vertical_drag_handle_width">18dp</dimen>
-    <dimen name="vertical_drag_handle_height">6dp</dimen>
+    <dimen name="vertical_drag_handle_width">14dp</dimen>
+    <dimen name="vertical_drag_handle_height">2dp</dimen>
     <dimen name="vertical_drag_handle_elevation">1dp</dimen>
     <dimen name="vertical_drag_handle_touch_size">48dp</dimen>
     <dimen name="vertical_drag_handle_padding_in_vertical_bar_layout">16dp</dimen>
