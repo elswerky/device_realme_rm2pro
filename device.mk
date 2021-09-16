@@ -147,7 +147,6 @@ PRODUCT_PACKAGES += \
     libbluetooth_audio_session \
     libbthost_if
 
-# Bluetooth
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/component-overrides.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sysconfig/component-overrides.xml
 
@@ -170,6 +169,10 @@ PRODUCT_PRODUCT_PROPERTIES += \
 PRODUCT_PACKAGES += \
     android.hardware.configstore@1.1-service \
     android.hardware.broadcastradio@1.0-impl
+
+# Dirac
+PRODUCT_PACKAGES += \
+    RealmeDirac
 
 # Display
 PRODUCT_PACKAGES += \
@@ -219,7 +222,6 @@ PRODUCT_PACKAGES += \
     libsynergy_loc_api \
     libwifi-hal-ctrl
 
-# GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps/flp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/flp.conf \
     $(LOCAL_PATH)/configs/gps/gps.conf:$(TARGET_COPY_OUT_VENDOR)/etc/gps.conf \
