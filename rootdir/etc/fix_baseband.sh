@@ -1,6 +1,6 @@
 #!/vendor/bin/sh
 
-tag="init.set_baseband.sh"
+tag="fix_baseband.sh"
 baseband=$(strings -n 60 /vendor/firmware_mnt/image/modem.b19 | grep QC_IMAGE_VERSION_STRING | cut -c 25-)
 
 if [ ! -z "$baseband" ]; then

@@ -451,9 +451,9 @@ on property:persist.env.fastdorm.enabled=true
     setprop persist.radio.data_no_toggle 1
 
 on property:gsm.version.baseband=*
-     start set_baseband
+     start fix_baseband
 
-service set_baseband /vendor/bin/init.set_baseband.sh
+service fix_baseband /vendor/bin/fix_baseband.sh
      class late_start
      user system
      group system

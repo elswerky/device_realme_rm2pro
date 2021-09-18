@@ -245,6 +245,7 @@ PRODUCT_PACKAGES += \
 
 # Init
 PRODUCT_PACKAGES += \
+    fix_baseband.sh \
     fstab.qcom \
     init.msm.usb.configfs.rc \
     init.oppo.rc \
@@ -255,7 +256,6 @@ PRODUCT_PACKAGES += \
     init.qcom.sh \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
-    init.set_baseband.sh \
     init.recovery.qcom.rc \
     init.target.rc \
     ueventd.qcom.rc
