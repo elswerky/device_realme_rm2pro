@@ -18,7 +18,6 @@
 $(call inherit-product, vendor/realme/RMX1801/RMX1801-vendor.mk)
 
 # Enable updating of APEXes
-$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -37,7 +36,10 @@ PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += \
     $(LOCAL_PATH)/overlay-aosp
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/RMX1801
+PRODUCT_SOONG_NAMESPACES += \
+$(LOCAL_PATH) \
+hardware/qcom-caf/$(YOUR_HW_PLATFORM)
+
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -326,6 +328,16 @@ PRODUCT_PACKAGES += \
     libandroid_net \
     netutils-wrapper-1.0
 
+# Hals
+SRC_AUDIO_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/audio
+SRC_DISPLAY_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/display
+SRC_MEDIA_HAL_DIR := hardware/qcom-caf/$(YOUR_HW_PLATFORM)/media
+
+
+
+# Platform
+YOUR_HW_PLATFORM := msm8998
+
 # Power
 PRODUCT_PACKAGES += \
     android.hardware.power@1.3-service.xiaomi_sdm660-libperfmgr
@@ -466,7 +478,7 @@ PRODUCT_PACKAGES += \
 
 # Qcom
 PRODUCT_USES_QCOM_HARDWARE := true
-PRODUCT_BOARD_PLATFORM := sdm660
+PRODUCT_BOARD_PLATFORM := $(YOUR_HW_PLATFORM)
 
 # Signapk
 PRODUCT_HOST_PACKAGES += \
