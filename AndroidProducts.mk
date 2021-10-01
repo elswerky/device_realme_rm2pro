@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_r2p.mk
+    $(LOCAL_DIR)/lineage_r2p.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_r2p-user \
-    xtended_r2p-userdebug \
-    xtended_r2p-eng
+    lineage_r2p-user \
+    lineage_r2p-userdebug \
+    lineage_r2p-eng
