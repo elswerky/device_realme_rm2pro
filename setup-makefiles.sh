@@ -8,7 +8,7 @@
 
 set -e
 
-DEVICE=r2p
+DEVICE=RMX1807
 VENDOR=realme
 
 # Load extract_utils and do some sanity checks
