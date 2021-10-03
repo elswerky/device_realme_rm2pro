@@ -15,7 +15,7 @@
 #
 
 # Get non-open-source specific aspects
-$(call inherit-product, vendor/realme/r2p/r2p-vendor.mk)
+$(call inherit-product, vendor/realme/RMX1807/RMX1807-vendor.mk)
 
 # setup dalvik vm configs
 $(call inherit-product, frameworks/native/build/phone-xhdpi-4096-dalvik-heap.mk)
@@ -29,7 +29,7 @@ PRODUCT_ENFORCE_RRO_TARGETS := *
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += $(LOCAL_PATH)/overlay/packages/apps/Snap
 
 # Soong namespaces
-PRODUCT_SOONG_NAMESPACES += device/realme/r2p
+PRODUCT_SOONG_NAMESPACES += device/realme/RMX1807
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -71,7 +71,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += $(LOCAL_PATH)/configs/msm_irqbalance.conf:$(TARGET_COPY_OUT_VENDOR)/etc/msm_irqbalance.conf
 
 # Asserts
-TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
+TARGET_OTA_ASSERT_DEVICE := RMX1807,RMX1801
 
 # Boot Animation
 TARGET_SCREEN_HEIGHT := 2340

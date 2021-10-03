@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/realme/r2p
+DEVICE_PATH := device/realme/RMX1807
 
 # Arch
 TARGET_ARCH := arm64
@@ -43,14 +43,17 @@ BOARD_PAGE_SIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
 TARGET_KERNEL_CLANG_COMPILE := true
 TARGET_KERNEL_SOURCE := kernel/realme/sdm660
+TARGET_KERNEL_CONFIG := RMX1807_defconfig
+TARGET_KERNEL_CONFIG := RMX1801_defconfig
 TARGET_KERNEL_CONFIG := r2p_defconfig
+
 
 # ANT+
 BOARD_ANT_WIRELESS_DEVICE := "qualcomm-hidl"
 
 # Assert
 TARGET_BOARD_INFO_FILE := $(DEVICE_PATH)/board-info.txt
-TARGET_OTA_ASSERT_DEVICE := r2p,RMX1801
+TARGET_OTA_ASSERT_DEVICE := RMX1807,RMX1801
 
 # Audio
 AUDIO_FEATURE_ENABLED_AAC_ADTS_OFFLOAD := true
@@ -169,4 +172,4 @@ WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 WPA_SUPPLICANT_VERSION := VER_0_8_X
 
 # Inherit from the proprietary version
--include vendor/realme/r2p/BoardConfigVendor.mk
+-include vendor/realme/RMX1807/BoardConfigVendor.mk

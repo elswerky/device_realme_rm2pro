@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/xtended_r2p.mk
+    $(LOCAL_DIR)/xtended_RMX1807.mk
 
 COMMON_LUNCH_CHOICES := \
-    xtended_r2p-user \
-    xtended_r2p-userdebug \
-    xtended_r2p-eng
+    xtended_RMX1807-user \
+    xtended_RMX1807-userdebug \
+    xtended_RMX1807-eng
