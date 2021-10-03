@@ -1,3 +1,4 @@
+ 
 #
 # Copyright (C) 2021 The PixelExperience Project
 #
@@ -13,13 +14,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_o_mr1.mk
 $(call inherit-product, device/realme/r2p/device.mk)
 
 # Inherit some PixelExperience stuff
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/xtended/config/common_full_phone.mk)
 TARGET_GAPPS_ARCH := arm64
 TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_INCLUDE_LIVE_WALLPAPERS := false
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := aosp_r2p
+PRODUCT_NAME := xtended_r2p
 PRODUCT_DEVICE := r2p
 PRODUCT_MANUFACTURER := OPPO
 PRODUCT_BRAND := OPPO
@@ -32,3 +33,8 @@ TARGET_VENDOR_DEVICE_NAME := r2p
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="r2p"
+
+XTENDED_BUILD_TYPE := UN OFFICIAL
+XTENDED_BUILD_MAINTAINER := elswerky
+
+TARGET_BOOT_ANIMATION_RES := 1080

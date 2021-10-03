@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/aosp_r2p.mk
+    $(LOCAL_DIR)/xtended_r2p.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_r2p-user \
-    aosp_r2p-userdebug \
-    aosp_r2p-eng
+    xtended_r2p-user \
+    xtended_r2p-userdebug \
+    xtended_r2p-eng
